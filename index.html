@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneet Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left"> Nav's Portfolio</div>
+            <div class="right">
+                <ul>
+                   <li><a href="/">Home</a></li>
+                     <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="/">Contact me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi,My name is <span class="purple">Navneet</span> 
+                <div>and I am a </div>
+                <span id="element"></span>
+                <div class="buttons">
+                    <button class="btn">Download Resume</button>
+                    <button class="btn">Visit Github</button>
+                </div>
+
+                </div>
+            <div class="rightSection">
+                <img src="background_image.png" alt="">
+
+            </div>
+        </section>
+        <hr>
+        <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>Hello ! This is <strong>Navneet Agrawal</strong>
+                Currently I am Pursing my B.Tech From AKGEC,Ghaziabad in <strong>Computer Science and Engineering.</strong>
+            </p>
+            <br>
+            <div class="tab-titles">
+                <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                <p class="tab-links" onclick="opentab('Education')">Education</p>
+                <p class="tab-links" onclick="opentab('Hobbies')">Hobbies</p>
+            </div>
+            <div class="tab-contents active-tab" id="Skills">
+                <ul>
+                    <li><span>Languages</span><br>C++,Python,SQL,HTML,CSS Javascript,React</li>
+                 <li><span>Database</span><br>MYSQL,ORACLE,SQL,MONGODB</li>
+                    <li><span>Softwares</span><br>VS Code,Atom, Github</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Education">
+                <ul>
+                    <li><span>2020 - 2024</span><br>Graduation(CSE),Ghaziabad</li>
+                    <li><span>2019</span><br>12th,Jhansi</li>
+                    <li><span>2017</span><br>10th,Jhansi</li>
+                </ul>
+            </div>
+            <div class="tab-contents" id="Hobbies">
+                <ul>
+                    <li><br>Sports</li>
+                    <li><br>Music</li>
+                    <li><br>Writing</li>
+                    <li><br>Travelling</li>
+                </ul>
+            </div>
+        
+        
+        </div>
+        <hr>
+        <div id="Projects">
+            <div class="container">
+                <h1 class="sub-title">My Projects</h1>
+                <div class="Projects-list">
+                    <div class="Projects">
+                        <img src="Spotify_Logo_CMYK_Black.png">
+                        <div class="layer">
+                            <h3>Spotify Clone</h3>
+        
+                        </div>
+                    </div>
+                    <div class="Projects">
+                        <img src="ginp-trojan-coronavirus-finder-screenshot-1.png">
+                        <div class="layer">
+                            <h3>Covi-find</h3>
+                        </div>
+                    </div>
+                    <div class="Projects">
+                        <img src="preview-page0.jpg">
+                        <div class="layer">
+                            <h3>To do list</h3>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer','Problem Solver'],
+            typeSpeed: 50,
+        });
+    </script>
+    
+</body>
+</html>
